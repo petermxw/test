@@ -1,4 +1,5 @@
 /*
+
 Module : CLOCKCTRL.CPP
 Purpose: Implementation for an MFC GUI control which implements
          an analog clock
