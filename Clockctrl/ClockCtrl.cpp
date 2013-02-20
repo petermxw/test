@@ -16,6 +16,8 @@ History: PJN / 16-02-2000 1. Removed noticable flicker which sometimes occurred
                           2. Fixed a bug where PreSubclassWindow was not calling 
                           RecalcLayout before a redraw was occurring.
 
+					PJN / 23-03-2013 1. Updated Copyright details
+					
 Copyright (c) 2000 - 2002 by PJ Naughter.  (Web: www.naughter.com, Email: pjna@naughter.com)
 
 All rights reserved.
