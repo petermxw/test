@@ -1,0 +1,136 @@
+<html>
+
+<head>
+<title>CClockCtrl v1.05</title>
+</head>
+
+<body>
+
+<p><font color="#000000" size="6" face="Arial"><strong>CClockCtrl v1.05</strong></font></p>
+
+<p><font face="Arial">Welcome to CClockCtrl, an MFC widget which renders an analog clock.
+The class is based in part on the class of the same name from the book
+&quot;MFC Programming with Visual C++ 6.0&quot;. The class is derived from CStatic and a number of public
+methods allow customisation of its look. A demo app is provided which demos the control as
+shown below:</font></p>
+
+<p><img border="0" src="ClockCtrl.gif" width="335" height="253"></p>
+
+<table border="0">
+<TBODY>
+  <tr>
+    <td><font size="5" face="Arial"><strong>Contents</strong></font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><a href="#Features">Features</a></font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><a href="#History">History</a></font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><a href="#Usage">Usage</a></font></td>
+  </tr>
+  <tr>
+    <td><font face="Arial"><a href="#Contact">Contacting the Author</a></font></td>
+  </tr>
+</TBODY>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><font face="Arial"><big><a name="History"></a></big><font color="#000000" size="5"><strong>History</strong></font></font></p>
+
+<p><strong><font face="Arial"><font size="3"><font color="#000000">V1.0 (1
+February 2000)</font></font>
+</font></strong>
+
+<ul>
+  <li><font face="Arial">Initial Public Release</font></li>
+</ul>
+
+<p><strong><font color="#000000" face="Arial">V1.01 (16 February 2000)</font></strong>
+
+<ul>
+  <li><font face="Arial">Removed noticable flicker which sometimes occurred                             when the seconds hand moved.</font></li>
+</ul>
+
+<p><strong><font color="#000000" face="Arial">V1.02 (27 July 2001)</font></strong>
+
+<ul>
+  <li><font face="Arial">Fixed a drawing glitch which left the old hour hand                             being displayed every 12 minutes</font></li>
+  <li><font face="Arial">Made most of the functions virtual to allow easier customisation.</font></li>
+  <li><font face="Arial">Sample app now can be dragged via left mouse button.</font></li>
+  <li><font face="Arial">Sample app now includes always on top functionality.</font></li>
+  <li><font face="Arial">Sample app now includes transparent window support
+    (Windows 2000 and later only). Specific build configurations are included
+    for this. Please note that you will need the platform SDK installed now to
+    compile these specific configurations.</font></li>
+  <li><font face="Arial">Sample app now provides a context menu.</font></li>
+  <li><font face="Arial">A new icon as been provided for the sample app.</font></li>
+  <li><font face="Arial">Got rid of MFC document / View code in sample as it was
+    not needed.</font></li>
+</ul>
+
+<p><strong><font color="#000000" face="Arial">V1.03 (1 August 2001)</font></strong>
+
+<ul>
+  <li><font face="Arial"> Second hand can now be updated with sub second precision
+    with the "SetSubSecondPrecision" method.</font></li>
+  <li><font face="Arial">Please remember that the included exe will only work on
+    Win2k as it used some of the new window layering API's. To get the sample
+    app to work on Win9x or NT 4, recompile the code using one of the non Win2k
+    build configurations.</font></li>
+</ul>
+
+<p><strong><font color="#000000" face="Arial">V1.04 (11 August 2001)</font></strong>
+
+<ul>
+  <li><font face="Arial"> Removed Win2k Build configurations and instead put in
+    code into sample app to at runtime, detect if the OS provides transparency
+    support. This means that the exe in the distribution will run on any Win32
+    OS without the need to recompile.</font></li>
+</ul>
+
+<p><strong><font color="#000000" face="Arial">V1.05 (23 March 2002)</font></strong>
+
+<ul>
+  <li><font face="Arial"> Updated Copyright details.</font></li>
+  <li><font face="Arial">Fixed a bug where PreSubclassWindow was not calling                          RecalcLayout before a redraw was occurring.</font></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><font face="Arial"><a name="Usage"></a><font color="#000000" size="5"><strong>Usage</strong></font></font></p>
+
+<p><font face="Arial">To use CClockCtrl in your project simply include ClockCtrl.cpp/h
+from the test application in your application and #include &quot;ClockCtrl.h&quot; in
+whichever files you want to use the class in. You can then use the class just like you
+would use an ordinary static control anywhere. The public methods CClockCtrl should be
+pretty self explanatory by having a look at the CClockCtrl header file.</font></p>
+
+<p><font face="Arial">You should also have a look at the CPJClockView::OnCreate() code in
+the sample application.</font></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><font face="Arial"><big><big><a name="Contact"></a></big></big><font color="#000000"
+size="5"><strong>Contacting the Author</strong></font></font></p>
+
+<p><font color="#000000" size="3" face="Arial">PJ Naughter<br>
+Email: <a href="mailto:pjna@naughter.com">pjna@naughter.com</a><br>
+Web: <a href="http://www.naughter.com">http://www.naughter.com</a><br>
+23 March 2002</font></p>
+</body>
+</html>
